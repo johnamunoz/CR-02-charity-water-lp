@@ -1,47 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charity: water | Clean Water Starts With Students</title>
+  <meta name="description" content="College students can help bring clean water to communities around the world with charity: water.">
+
+  <!-- Brand fonts are Proxima Nova and Avenir. Most computers don't have them,
+       so Montserrat (a free look-alike) loads as a backup. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo">
+        <img src="img/cw_logo-2.png" alt="charity: water">
+      </a>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#impact">Impact</a>
+        <a href="#get-involved">Get Involved</a>
+      </nav>
+
+      <a href="https://www.charitywater.org/fundraise#start-fundraiser" class="btn-outline" target="_blank" rel="noopener">Start a Campaign</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Charity: Water Delivers Clean Water, Inspires Hope!</h1>
+        <p class="hero-text">
+          Empower communities with access to clean water—every contribution from students
+          can spark hope and change lives for the better!
+        </p>
+
+        <div class="hero-actions">
+          <a href="#get-involved" class="btn-pill">
+            <span class="dot" aria-hidden="true"></span>
+            Let’s Change Lives
+          </a>
+
+          <div class="supporter-badge">
+            <img src="img/water-can-transparent.png" alt="" class="badge-can">
+            <span class="badge-text">
+              <!-- the wrapper hides the little can on the left of the logo -->
+              <span class="badge-wordmark"><img src="img/cw_logo-2.png" alt="charity: water"></span>
+              <span class="badge-label">Supporter</span>
+            </span>
+          </div>
+
+          <!-- opens an email with a link to this page (plain HTML, no JavaScript) -->
+          <a class="share-btn" href="mailto:?subject=Help%20bring%20clean%20water%20to%20communities&amp;body=Check%20out%20this%20charity%3A%20water%20page%3A%20https%3A%2F%2Fjohnamunoz.github.io%2FCR-02-charity-water-lp%2F" aria-label="Share this page by email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.6" y1="10.5" x2="15.4" y2="6.5"></line>
+              <line x1="8.6" y1="13.5" x2="15.4" y2="17.5"></line>
+            </svg>
+          </a>
         </div>
+      </div>
+
+      <!-- The photo gets its torn-paper left edge from CSS (clip-path) -->
+      <div class="hero-media">
+        <div class="hero-torn">
+          <img src="img/hero-water.jpg" alt="A smiling woman fills a yellow jerry can with clean water from a tap">
+        </div>
+      </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+    <!-- ========== THE STORY: THE WATER CRISIS ========== -->
+    <section class="story" id="about">
+      <div class="container">
+        <p class="eyebrow">The water crisis</p>
+        <h2>Nearly 1 in 10 people worldwide live without clean water.</h2>
+        <p class="lead">
+          That’s about twice the population of the United States. Most people without clean water
+          spend hours every day walking to collect it, and in 8 out of 10 homes without water on site,
+          that job falls to women and girls. That’s time taken away from school, work, and family.
+        </p>
+
+        <div class="stat-grid">
+          <article class="stat-card">
+            <p class="stat-number">696M</p>
+            <p class="stat-label">people still waiting for their first day of clean water</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-number">8 in 10</p>
+            <p class="stat-label">homes without water on site rely on women and girls to collect it</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-number">$4.30</p>
+            <p class="stat-label">returned to the economy for every $1 invested in water and sanitation</p>
+          </article>
+        </div>
+
+        <p class="source-note">Sources: charity: water, citing WHO/UNICEF JMP (2024), UNICEF (2019), and WHO (2012).</p>
+      </div>
     </section>
+
+    <!-- ========== IMPACT: THE 100% MODEL ========== -->
+    <section class="impact" id="impact">
+      <div class="container">
+        <p class="eyebrow eyebrow-light">How it works</p>
+        <h2>100% of public donations go directly to clean water projects.</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3>You give</h3>
+            <p>Donate once, start a fundraiser with friends, or join The Spring with a monthly gift.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3>Every dollar funds water</h3>
+            <p>A separate group of private supporters covers operating costs, so your gift goes straight to water projects.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3>You see the proof</h3>
+            <p>Every project is shared with photos and GPS coordinates, so you can see the water you helped fund.</p>
+          </li>
+        </ol>
+
+        <div class="impact-numbers">
+          <div>
+            <p class="impact-big">200,000+</p>
+            <p>water projects funded</p>
+          </div>
+          <div>
+            <p class="impact-big">21M+</p>
+            <p>people who will be served</p>
+          </div>
+          <div>
+            <p class="impact-big">29</p>
+            <p>countries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GET INVOLVED (CALL TO ACTION) ========== -->
+    <section class="involved" id="get-involved">
+      <div class="container">
+        <p class="eyebrow">For students</p>
+        <h2>Your campus can bring clean water to an entire community.</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Start a campaign</h3>
+            <p>Turn a birthday, a 5K, or a dorm challenge into a fundraiser and rally your friends around it.</p>
+            <a href="https://www.charitywater.org/fundraise#start-fundraiser" class="card-link" target="_blank" rel="noopener">Start fundraising →</a>
+          </article>
+
+          <article class="card card-featured">
+            <h3>Join The Spring</h3>
+            <p>Just $20 a month brings six people, an entire family, clean water each year.</p>
+            <a href="https://www.charitywater.org/donate/the-spring" class="card-link" target="_blank" rel="noopener">Give monthly →</a>
+          </article>
+
+          <article class="card">
+            <h3>Spread the word</h3>
+            <p>Share this page with your friends, your student org, or your class group chat.</p>
+            <a href="mailto:?subject=Help%20bring%20clean%20water%20to%20communities&amp;body=Check%20out%20this%20charity%3A%20water%20page%3A%20https%3A%2F%2Fjohnamunoz.github.io%2FCR-02-charity-water-lp%2F" class="card-link">Share by email →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FINAL CALL TO ACTION ========== -->
+    <section class="final-cta">
+      <div class="container final-inner">
+        <img src="img/water-can-transparent.png" alt="" class="final-can">
+        <h2>Let’s change lives.</h2>
+        <p>Every contribution, big or small, brings someone closer to clean water.</p>
+        <a href="https://www.charitywater.org/donate" class="btn-pill btn-pill-yellow" target="_blank" rel="noopener">
+          Donate Now
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">
+        <img src="img/water-can-transparent.png" alt="" class="footer-can">
+        <!-- the wrapper hides the little can on the left of the logo -->
+        <span class="footer-wordmark"><img src="img/cw_logo-2.png" alt="charity: water"></span>
+      </span>
+      <p>
+        Student landing page concept. Not an official charity: water website.
+        Visit <a href="https://www.charitywater.org" target="_blank" rel="noopener">charitywater.org</a>.
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
